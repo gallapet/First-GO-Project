@@ -57,7 +57,7 @@ func RemoveUserByID(id int) error {
 			users = append(users[:i], users[i+1:]...)
 			return nil
 		}
-
-		return fmt.Errorf("user with ID '%v' not found", id)
 	}
+	
+	return fmt.Errorf("user with ID '%v' not found", id)
 }
