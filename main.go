@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/pluralsight/webservice/models"
+)
 
 func main() {
-	fmt.Println("Hello from a module")
+	u := models.User{
+		ID: 2,
+		FirstName: "Peter",
+		LastName: "Gallacher",
+	}
+	fmt.Println(u)
 }
